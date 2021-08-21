@@ -43,6 +43,7 @@ body{
       font-family: 'Big Shoulders Display', cursive;
       padding: 20px 0 20px 0;
       font-size: 50px;
+      font-weight: 700;
     }      
   }
   button{
@@ -51,7 +52,7 @@ body{
     background-color: $standard_background;
     padding: 15px 30px;
     border-radius: 25px;
-    border: 0px;
+    border: 2px solid hsl(0, 0%, 95%);
   }
   .btn1{
     color: #E38826;
@@ -61,6 +62,21 @@ body{
   }
   .btn3{
     color: #004241;
+  }
+  .btn1:hover{
+    background-color: #E38826;
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+  }
+  .btn2:hover{
+    background-color: #006970;
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+  }
+  .btn3:hover{
+    background-color: #004241;
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
   }
   .card:nth-child(1){
     background-color: #E38826;
@@ -110,9 +126,14 @@ body{
       border-top-right-radius: $radius;
       border-bottom-left-radius: 0px;
     }
-    .card:nth-child(3){
+    .card:nth-child(3){ 
       border-top-right-radius: 0px;
       border-bottom-left-radius:  $radius;
     }
   }
+}
+.attribution{
+  font-family: Arial;
+  position: relative;
+  bottom: -60px;
 }
