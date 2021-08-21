@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards {
+  color: #f2f2f2;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.cards .card {
+  padding: 30px 45px 50px 45px;
+}
+
+.cards .information p {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 20px 0 50px 0;
+  font-family: 'Lexend Deca', sans-serif;
+  height: 220px;
+  line-height: 30px;
+}
+
+.cards .information img {
+  display: block;
+  padding: 10px 0 30px 0;
+}
+
+.cards .information h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  padding: 20px 0 20px 0;
+  font-size: 50px;
+}
+
+.cards button {
+  margin-top: 40px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: 0px;
+}
+
+.cards .btn1 {
+  color: #E38826;
+}
+
+.cards .btn2 {
+  color: #006970;
+}
+
+.cards .btn3 {
+  color: #004241;
+}
+
+.cards .card:nth-child(1) {
+  background-color: #E38826;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.cards .card:nth-child(2) {
+  background-color: #006970;
+}
+
+.cards .card:nth-child(3) {
+  background-color: #004241;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 760px) {
+  .cards .information p {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .cards {
+    margin: 30px 0 30px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 320px;
+  }
+  .cards .card {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+  .cards .information p {
+    padding-bottom: 15px;
+    height: auto;
+  }
+  .cards button {
+    margin-top: 10px;
+  }
+  .cards .card:nth-child(1) {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .cards .card:nth-child(3) {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

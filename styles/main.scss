@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+$radius: 8px;
+$standard_background: hsl(0, 0%, 95%);
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $standard_background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards{
+  color: $standard_background;
+  max-width: 960px;
+  display: flex;
+  position: relative;
+  .card{
+    padding:  30px 45px 50px 45px;
+  }
+  .information{
+    p{
+      color: hsla(0, 0%, 100%, 0.75);
+      padding: 20px 0 50px 0;
+      font-family: 'Lexend Deca', sans-serif;
+      height: 220px;
+      line-height: 30px;
+    }
+    img{
+      display: block;
+      padding: 10px 0 30px 0;
+    }
+    h2{
+      font-family: 'Big Shoulders Display', cursive;
+      padding: 20px 0 20px 0;
+      font-size: 50px;
+    }      
+  }
+  button{
+    margin-top: 40px;
+    font-weight: 700;
+    background-color: $standard_background;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 0px;
+  }
+  .btn1{
+    color: #E38826;
+  }
+  .btn2{
+    color: #006970;
+  }
+  .btn3{
+    color: #004241;
+  }
+  .card:nth-child(1){
+    background-color: #E38826;
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+  .card:nth-child(2){
+    background-color: #006970;
+  }
+  .card:nth-child(3){
+    background-color: #004241;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .cards{
+    .information{
+      p{
+        height: 290px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 620px){
+  .cards{
+    .card{
+      padding-left: 40px;
+      padding-right: 30px;
+    }
+    margin: 30px 0 30px 0;
+    flex-direction: column;
+    max-width: 320px;
+    .information{
+      p{  
+        
+        padding-bottom: 15px;
+        height: auto;
+      }
+    }
+    button{
+      margin-top: 10px;
+    }
+
+    .card:nth-child(1){
+      border-top-right-radius: $radius;
+      border-bottom-left-radius: 0px;
+    }
+    .card:nth-child(3){
+      border-top-right-radius: 0px;
+      border-bottom-left-radius:  $radius;
+    }
+  }
+}
